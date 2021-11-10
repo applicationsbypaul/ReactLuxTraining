@@ -1,1 +1,1 @@
-import "bootstrap/dist/css/bootstrap.m
+import "bootstrap/dist/css/bootstrap.css";
