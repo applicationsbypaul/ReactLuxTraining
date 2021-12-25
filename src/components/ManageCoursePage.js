@@ -1,9 +1,18 @@
-import react from 'react';
+import react, { useState }  from 'react';
+import CourseForm from './CourseForm';
 
 const ManageCoursePage = props => {
+    const [ course, setCourse ] = useState({
+        id: null,
+        slug: "",
+        title: "",
+        authorId: null,
+        category: "",
+    });
     return(
         <>
             <h2>Manage Course</h2>
+            <CourseForm course = {course}></CourseForm>
             {props.match.params.slug}
         </>
     )
