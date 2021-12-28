@@ -5,9 +5,9 @@ const ManageCoursePage = props => {
     const [ course, setCourse ] = useState({
         id: null,
         slug: "",
-        title: "",
+        title: null,
         authorId: null,
-        category: "",
+        category: null
     });
     return(
         <>
